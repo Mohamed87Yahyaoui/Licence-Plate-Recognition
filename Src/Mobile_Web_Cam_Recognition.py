@@ -31,10 +31,7 @@ while True:
         imgWantedRGB = cv2.cvtColor(imgWanted, cv2.COLOR_BGR2RGB)
         num = pyt.image_to_string(imgWantedRGB, config='--psm 6')
         print(num)
-        imgDetails = np.ones([300, 300])
-        cv2.putText(imgDetails, num, (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 0))
         cv2.imshow("Number Plate", imgWanted)
-        cv2.imshow("Number Plate Details", imgDetails)
 
     cv2.imshow("Image", img)
     if cv2.waitKey(1) & 0XFF == ord('q'):
@@ -42,5 +39,6 @@ while True:
         count = count + 1
         cv2.rectangle(img, (0, 200), (640, 400), (0, 255, 0), cv2.FILLED)
         cv2.putText(img, "Number successfully saved", (50, 300), cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255))
-        cv2.imshow("Frame", img)
-        cv2.waitKey(10)
+        cv2.imshow("Image", img)
+        cv2.waitKey(5000)
+        break
