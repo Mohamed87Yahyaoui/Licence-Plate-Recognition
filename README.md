@@ -11,11 +11,11 @@
 
 
 # Installation : 
-1- Install OpenCV [pip install opencv-python](https://pypi.org/project/opencv-python/)
+1- Install OpenCV : [pip install opencv-python](https://pypi.org/project/opencv-python/)
 
 
 
-2- Install Pytesseract [pip install pytesseract](https://pypi.org/project/pytesseract/)                            
+2- Install Pytesseract :  [pip install pytesseract](https://pypi.org/project/pytesseract/)                            
 
 More details about installation : [Github-Tesseract](https://github.com/tesseract-ocr/tesseract)
 
